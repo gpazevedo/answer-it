@@ -4,13 +4,20 @@ Voice-based question practice app. A random question is spoken aloud, the user a
 
 ## How to run
 
+Start the backend and frontend in separate terminals.
+
+Backend:
+
 ```bash
-# Backend
 cd backend
 uv run uvicorn main:app --reload
+```
 
-# Frontend
+Frontend:
+
+```bash
 cd frontend
+npm install
 npm run dev
 ```
 
