@@ -37,7 +37,7 @@ async def shutdown():
 
 # ── Question storage ──────────────────────────────────────────────
 
-QUESTIONS_FILE = Path(__file__).parent / "questions.json"
+QUESTIONS_FILE = Path(__file__).parent / "data" / "questions.json"
 
 
 def _load_questions() -> list[dict]:
@@ -107,7 +107,7 @@ async def random_question():
 
 # ── History storage ────────────────────────────────────────────────
 
-HISTORY_FILE = Path(__file__).parent / "history.json"
+HISTORY_FILE = Path(__file__).parent / "data" / "history.json"
 
 
 def _load_history() -> list[dict]:
