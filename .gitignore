@@ -6,3 +6,5 @@ __pycache__/
 questions.json
 .venv/
 *.json
+!frontend/package.json
+!frontend/package-lock.json
