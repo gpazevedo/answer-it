@@ -1,0 +1,16 @@
+[project]
+name = "answer-it-backend"
+version = "0.1.0"
+description = "Answer It - Question practice with voice"
+requires-python = ">=3.14"
+dependencies = [
+    "edge-tts>=7.2.7",
+    "fastapi>=0.135.1",
+    "faster-whisper",
+    "imageio-ffmpeg>=0.6.0",
+    "python-dotenv>=1.2.2",
+    "uvicorn[standard]>=0.44.0",
+]
+
+[tool.uv.sources]
+faster-whisper = { git = "https://github.com/gpazevedo/faster-whisper", rev = "51ae165537f493cc1fdffad7ef5c8021518be487" }
